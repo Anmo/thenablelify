@@ -1,0 +1,55 @@
+{
+  "name": "chain-to-promise",
+  "version": "0.0.1",
+  "description": "A utility to enable chain methods to promises",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc ava",
+    "test:w": "npm test -- --watch",
+    "test:nyan": "ava --tap | tap-nyan",
+    "build": "BABEL_ENV=production babel --out-dir=dist index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anmo/chain-to-promise.git"
+  },
+  "author": "Anmo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Anmo/chain-to-promise/issues"
+  },
+  "homepage": "https://github.com/Anmo/chain-to-promise#readme",
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.21.0",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-3": "^6.17.0",
+    "nyc": "^10.0.0",
+    "sinon": "^1.17.6",
+    "tap-nyan": "^1.1.0"
+  },
+  "ava": {
+    "source": [
+      "index.js"
+    ],
+    "require": [
+      "babel-core/register"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ],
+    "plugins": [
+      "transform-runtime"
+    ],
+    "ignore": "test.js",
+    "env": {
+      "development": {
+        "sourceMaps": "inline"
+      }
+    }
+  }
+}

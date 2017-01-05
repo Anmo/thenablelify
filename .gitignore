@@ -28,6 +28,8 @@ build/Release
 
 # Dependency directories
 node_modules
+coverage
+.nyc_output
 jspm_packages
 
 # Optional npm cache directory
