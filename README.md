@@ -1,26 +1,26 @@
-# chain-to-promise
+# thenablelify
 
-![npm](https://img.shields.io/npm/v/chain-to-promise.svg) ![license](https://img.shields.io/npm/l/chain-to-promise.svg) ![github-issues](https://img.shields.io/github/issues/Anmo/chain-to-promise.svg)  ![Circle CI build status](https://circleci.com/gh/Anmo/chain-to-promise.svg?style=svg)
+![npm](https://img.shields.io/npm/v/thenablelify.svg) ![license](https://img.shields.io/npm/l/thenablelify.svg) ![github-issues](https://img.shields.io/github/issues/Anmo/thenablelify.svg)  ![Circle CI build status](https://circleci.com/gh/Anmo/thenablelify.svg?style=svg)
 
 A utility to enable chain methods to promises
 
-![nodei.co](https://nodei.co/npm/chain-to-promise.png?downloads=true&downloadRank=true&stars=true)
+![nodei.co](https://nodei.co/npm/thenablelify.png?downloads=true&downloadRank=true&stars=true)
 
-![travis-status](https://img.shields.io/travis/Anmo/chain-to-promise.svg)
-![stars](https://img.shields.io/github/stars/Anmo/chain-to-promise.svg)
-![forks](https://img.shields.io/github/forks/Anmo/chain-to-promise.svg)
+![travis-status](https://img.shields.io/travis/Anmo/thenablelify.svg)
+![stars](https://img.shields.io/github/stars/Anmo/thenablelify.svg)
+![forks](https://img.shields.io/github/forks/Anmo/thenablelify.svg)
 
-![forks](https://img.shields.io/github/forks/Anmo/chain-to-promise.svg)
+![forks](https://img.shields.io/github/forks/Anmo/thenablelify.svg)
 
-![](https://david-dm.org/Anmo/chain-to-promise/status.svg)
-![](https://david-dm.org/Anmo/chain-to-promise/dev-status.svg)
+![](https://david-dm.org/Anmo/thenablelify/status.svg)
+![](https://david-dm.org/Anmo/thenablelify/dev-status.svg)
 
 ## Features
 
 
 ## Install
 
-`npm install --save chain-to-promise`
+`npm install --save thenablelify`
 
 
 ## Scripts
@@ -42,6 +42,7 @@ Package | Version | Dev
 [babel-plugin-transform-runtime](https://www.npmjs.com/package/babel-plugin-transform-runtime) | ^6.15.0 | ✔
 [babel-preset-es2015](https://www.npmjs.com/package/babel-preset-es2015) | ^6.18.0 | ✔
 [babel-preset-stage-3](https://www.npmjs.com/package/babel-preset-stage-3) | ^6.17.0 | ✔
+[coveralls](https://www.npmjs.com/package/coveralls) | ^2.11.15 | ✔
 [node-readme](https://www.npmjs.com/package/node-readme) | ^0.1.9 | ✔
 [nyc](https://www.npmjs.com/package/nyc) | ^10.0.0 | ✔
 [sinon](https://www.npmjs.com/package/sinon) | ^1.17.7 | ✔
