@@ -77,10 +77,35 @@ test('Having a function, that throws an Error, call directly', async t => {
 test('Use thenablelify to transform a function, that throws an Error, into a chain method that acts as a Promise', async t => {
   t.context.thenablelify.thenablelifyHandler(t.context.obj, 'methodD')
   t.context.obj.then = t.context.thenablelify.returnThen
-  t.context.obj.catch = t.context.thenablelify.returnCatch
 
   const prom = t.context.obj.methodD()
 
   t.is(prom, t.context.obj)
   t.throws(prom, Error, 'Something went wrong')
+})
+
+test('Don\'t catch it', async t => {
+  t.context.thenablelify.thenablelifyHandler(t.context.obj, 'methodA')
+  t.context.obj.catch = t.context.thenablelify.returnCatch
+
+  t.context.obj.methodA()
+    .catch(() => t.fail())
+    .then(() => t.pass())
+})
+
+test('Catch it', async t => {
+  t.context.thenablelify.thenablelifyHandler(t.context.obj, 'methodD')
+  t.context.obj.catch = t.context.thenablelify.returnCatch
+
+  t.context.obj.methodD()
+    .catch(() => t.pass())
+    .then(() => t.pass())
+})
+
+test('Catch it with then', async t => {
+  t.context.thenablelify.thenablelifyHandler(t.context.obj, 'methodD')
+  t.context.obj.then = t.context.thenablelify.returnThen
+
+  t.context.obj.methodD()
+    .then(() => t.fail(), () => t.pass())
 })
