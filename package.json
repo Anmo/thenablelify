@@ -1,5 +1,5 @@
 {
-  "name": "chain-to-promise",
+  "name": "thenablelify",
   "version": "0.0.1",
   "description": "A utility to enable chain methods to promises",
   "main": "index.js",
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Anmo/chain-to-promise.git"
+    "url": "git+https://github.com/Anmo/thenablelify.git"
   },
   "author": "Anmo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Anmo/chain-to-promise/issues"
+    "url": "https://github.com/Anmo/thenablelify/issues"
   },
-  "homepage": "https://github.com/Anmo/chain-to-promise#readme",
+  "homepage": "https://github.com/Anmo/thenablelify#readme",
   "devDependencies": {
     "ava": "^0.17.0",
     "babel-cli": "^6.18.0",
