@@ -1,15 +1,16 @@
 {
   "name": "thenablelify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A utility to enable chain methods to promises",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "readme": "node-readme",
     "test": "nyc ava",
     "test:w": "npm test -- --watch",
     "test:nyan": "ava --tap | tap-nyan",
     "report": "nyc report --reporter=html",
-    "build": "BABEL_ENV=production babel --out-dir=dist index.js"
+    "build": "BABEL_ENV=production babel --out-dir=dist index.js",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
