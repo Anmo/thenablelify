@@ -31,6 +31,7 @@ A utility to enable chain methods to promises
  - **npm run test:nyan** : `ava --tap | tap-nyan`
  - **npm run report** : `nyc report --reporter=html`
  - **npm run build** : `BABEL_ENV=production babel --out-dir=dist index.js`
+ - **npm run prepublish** : `npm run build`
 
 ## Dependencies
 
